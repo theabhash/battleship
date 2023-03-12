@@ -1,0 +1,43 @@
+<html>
+	
+<!-- This is an example HTML file, which we used to implement the sample solution. -->
+<!-- You are free to update this HTML file in any way to fit your solution. -->
+
+<head>
+	
+	<link rel="stylesheet" type="text/css" href="final.css"/>
+</head>
+
+<body>
+
+	<h1>Battleships</h1>
+	
+	<h2>A Javascript game</h2>
+
+<!-- Form to set playing field size & ships -->
+	<form id="frm_input_data">
+		Number of cells:
+		<input type="text" name="numcells" id="textbox" value="7"> <br>
+		Allowed ships <br>
+		<div id="ship-options">
+		<input type="checkbox" name="ships" value="2" > Destroyer (2 squares)<br>
+		<input type="checkbox" name="ships" value="3" > Cruiser (3 squares)<br>
+		<input type="checkbox" name="ships" value="4" > Battleship (4 squares)<br>
+		</div>
+		<br>
+		<input type="button" Value="Start Easy Game"      onclick="StartGame(this.form,3)">
+		<input type="button" Value="Start Moderate Game"  onclick="StartGame(this.form,2)">
+		<input type="button" Value="Start Difficult Game" onclick="StartGame(this.form,1.5)">
+		<br>
+	</form> 
+	
+	<!-- Div  for the playing field-->
+	<div id="div_table_board">
+	</div>
+
+
+	<p id="p_bombs">The number of bombs depends on the number of cells !!!</p>
+
+<script src=final.js></script>
+</body>
+</html>
